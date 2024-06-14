@@ -23,9 +23,9 @@
                 </div>
 
                 <x-link href="{{ $item->action }}" class="font-light text-sm" override="class" target="_blank">
-                    <x-link.hover>
+                    <!-- <x-link.hover>
                         {{ $item->learn_more }}
-                    </x-link.hover>
+                    </x-link.hover> -->
                 </x-link>
             </div>
         </div>

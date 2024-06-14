@@ -3,7 +3,7 @@
 return [
 
     'version'               => 'Version',
-    'powered'               => 'Powered by Akaunting',
+    'powered'               => 'Powered by Contax',
     'link'                  => 'https://akaunting.com',
     'software'              => 'Online Accounting Software',
     'powered_by'            => 'Powered by',

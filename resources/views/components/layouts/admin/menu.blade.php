@@ -41,7 +41,7 @@
     x-ref="realMenu"
     class="w-70 h-screen flex hidden fixed top-0 js-menu z-20 xl:z-10 transition-all ltr:-left-80 rtl:-right-80 xl:ltr:left-0 xl:rtl:right-0"
 >
-    <div class="w-14 py-7 px-1 bg-lilac-900 z-10 menu-scroll overflow-y-auto overflow-x-hidden" style="display:none;">
+    <div class="w-14 py-7 px-1 bg-lilac-900 z-10 menu-scroll overflow-y-auto overflow-x-hidden">
         <div
             data-tooltip-target="tooltip-profile"
             data-tooltip-placement="right"
@@ -89,14 +89,14 @@
             </x-tooltip>
             @endcan
 
-            <x-tooltip id="tooltip-search" placement="right" message="{{ trans('general.search') }}">
-                <button type="button" class="flex items-center menu-button justify-center w-8 h-8 mb-2.5 relative cursor-pointer outline-none">
+            <x-tooltip id="tooltip-search" placement="right" message="{{ trans('general.search') }}" style="display:none;">
+                <button style="display:none;" type="button" class="flex items-center menu-button justify-center w-8 h-8 mb-2.5 relative cursor-pointer outline-none">
                     <span id="menu-search-icon" name="search" class="material-icons-outlined text-purple text-2xl pointer-events-none">search</span>
                 </button>
             </x-tooltip>
 
-            <x-tooltip id="tooltip-new" placement="right" message="{{ trans('general.new') }}">
-                <button type="button" class="add-item menu-button flex items-center justify-center w-8 h-8 mb-2.5 cursor-pointer js-menu-toggles" data-menu="add-new-menu">
+            <x-tooltip id="tooltip-new" placement="right" message="{{ trans('general.new') }}" style="display:none;">
+                <button style="display:none;" type="button" class="add-item menu-button flex items-center justify-center w-8 h-8 mb-2.5 cursor-pointer js-menu-toggles" data-menu="add-new-menu">
                     <span id="menu-neww-icon" name="add_circle_outline" class="material-icons-outlined text-purple text-2xl pointer-events-none">add_circle_outline</span>
                 </button>
             </x-tooltip>
@@ -108,7 +108,7 @@
             </x-tooltip>
 
             <x-tooltip id="tooltip-support" placement="right" message="{{ trans('general.help') }}">
-                <x-link href="{{ url(trans('header.support_link')) }}" target="_blank" class="flex items-center justify-center w-8 h-8 mb-2.5 cursor-pointer js-menu-toggles" override="class">
+                <x-link style="display:none;" href="{{ url(trans('header.support_link')) }}" target="_blank" class="flex items-center justify-center w-8 h-8 mb-2.5 cursor-pointer js-menu-toggles" override="class">
                     <span id="menu-support-icon" class="material-icons-outlined text-purple text-2xl pointer-events-none">support</span>
                 </x-link>
             </x-tooltip>

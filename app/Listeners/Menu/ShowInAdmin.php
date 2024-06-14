@@ -109,7 +109,7 @@ class ShowInAdmin
 
     private function addBankingAccountsMenuItem($menu)
     {
-        $title = trim(trans_choice('Bank', 2));
+        $title = trim(trans_choice('general.accounts', 2));
         if ($this->canAccessMenuItem($title, 'read-banking-accounts')) {
             $menu->route('accounts.index', $title, [], 70, ['icon' => 'account_balance', 'inactive' => '']);
         }
@@ -157,6 +157,8 @@ class ShowInAdmin
         $menu->route('settings.index', $title, [], 120, ['icon' => 'settings', 'inactive' => '']);
     }
 }
+
+
 }
 
 

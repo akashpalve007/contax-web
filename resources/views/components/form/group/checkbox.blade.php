@@ -44,7 +44,7 @@
                 }
                 @endphp
                 <div class="{{ ! empty($attributes['checkbox-class']) ? $attributes['checkbox-class'] : 'sm:col-span-3' }}">
-                    <div class="custom-control custom-checkbox">
+                    <div class="custom-control custom-checkbox" >
                         <x-form.input.checkbox
                             name="{{ $name }}"
                             label="{{ $option->$optionValue }}"

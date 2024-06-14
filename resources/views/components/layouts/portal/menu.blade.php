@@ -71,8 +71,8 @@
             </x-tooltip>
             @endcan
 
-            <x-tooltip id="tooltip-search" placement="right" message="{{ trans('general.search') }}">
-                <button type="button" class="flex items-center menu-button justify-center w-8 h-8 mb-2.5 relative cursor-pointer outline-none">
+            <x-tooltip id="tooltip-search" placement="right" message="{{ trans('general.search') }}" style="display:none;">
+                <button  type="button" class="flex items-center menu-button justify-center w-8 h-8 mb-2.5 relative cursor-pointer outline-none">
                     <span name="search" class="material-icons-outlined text-purple text-2xl pointer-events-none">search</span>
                 </button>
             </x-tooltip>
